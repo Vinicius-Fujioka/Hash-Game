@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="/css/jogoDaVelha.css">
+</head>
+
+<body>
+    <main>
+        <div style="height: 10%;">
+            <h1>Jogo da Velha</h1>
+        </div>
+        <div style="height: 90%; display: flex; align-items: center; justify-content: center;">
+            <div id="tabuleiro">
+                <div class="linha">
+                    <div class="tabuleirocasa" data-i="1"></div>
+                    <div class="tabuleirocasa" data-i="2"></div>
+                    <div class="tabuleirocasa" data-i="3"></div>
+                </div>
+                <div class="linha">
+                    <div class="tabuleirocasa" data-i="4"></div>
+                    <div class="tabuleirocasa" data-i="5"></div>
+                    <div class="tabuleirocasa" data-i="6"></div>
+                </div>
+                <div class="linha">
+                    <div class="tabuleirocasa" data-i="7"></div>
+                    <div class="tabuleirocasa" data-i="8"></div>
+                    <div class="tabuleirocasa" data-i="9"></div>
+                </div>
+                <div class="jogador">Vez do jogador X</div>
+            </div>
+        </div>
+        <div class="winning-message" data-winning-message>
+            <p class="winning-message-text" data-winning-message-text>X venceu!</p>
+            <button class="winning-message-button" data-leave>Sair</button>
+            <button class="winning-message-button" data-play-again>Jogar novamente</button>
+        </div>
+    </main>
+    <script src="/javascript/jogoDaVelha.js"></script>
+</body>
+
+</html>
